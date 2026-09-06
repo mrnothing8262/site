@@ -21,7 +21,7 @@
     body {
       background-color: var(--bg-color);
       color: var(--text-main);
-      font-family: 'Courier New', Courier, monospace; 
+      font-family: 'Courier New', Courier, monospace;
       line-height: 1.6;
     }
 
@@ -32,7 +32,6 @@
       padding: 2rem 0;
     }
 
-   
     header {
       padding: 4rem 0;
       border-bottom: 1px solid #333;
@@ -62,7 +61,6 @@
       }
     }
 
-   
     h2 {
       color: var(--accent);
       margin: 3rem 0 1.5rem;
@@ -75,7 +73,6 @@
       gap: 1.5rem;
     }
 
-   
     .card {
       background-color: var(--card-bg);
       border: 1px solid #333;
@@ -104,7 +101,6 @@
       text-decoration: underline;
     }
 
-    
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -142,34 +138,73 @@
       <a href="resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">[ Download Resume.pdf ]</a>
     </header>
 
-    <section id="achievements">
-      <h2>## Achievements &amp; Certifications</h2>
+    <!-- Professional Summary -->
+    <section id="summary">
+      <h2>## Professional Summary</h2>
+      <p>Offensive Security Enthusiast with a strong foundation in Web Application, API, and Network Penetration Testing. Hands-on experience executing OWASP Top 10 vulnerability assessments, custom recon automation, and Active Directory exploitation in lab environments. Proven track record of identifying real-world security flaws through Bug Bounty programs and practical CTF challenges.</p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+      <h2>## Technical Skills</h2>
       <ul>
-        <li><strong>CISCO Ethical Hacker Certificate</strong> - Completed July 2026.</li>
-        <li><strong>CEH v13</strong> - Preparing for it...</li>
-        <li><strong>OpenBugBounty</strong> - Found some bugs while doing Bug Bounty.</li>
-        <li><strong>TryHackMe</strong> - Solved numbers of CTF machines</li>
+        <li><strong>Web &amp; API Security:</strong> OWASP Top 10, SQLi, XSS, SSRF, IDOR, Broken Authentication, REST API Testing</li>
+        <li><strong>Network &amp; Infrastructure:</strong> Port Scanning, Enumeration, Active Directory (Pass-the-Hash, Kerberoasting), Wireless Security</li>
+        <li><strong>Tools:</strong> Burp Suite Professional, Nmap, Metasploit, Nuclei, Wireshark, SQLmap, Hydra, Gobuster</li>
+        <li><strong>Scripting &amp; OS:</strong> Python, Bash, C, JavaScript, R | Kali Linux, Ubuntu, Windows, MacOS</li>
       </ul>
     </section>
 
-    <section id="writeups">
-      <h2>## Projects &amp; Vulnerability Writeups</h2>
+    <!-- Achievements / Practical Experience -->
+    <section id="achievements">
+      <h2>## Practical Experience &amp; Achievements</h2>
+      <div class="card">
+        <h3>Bug Bounty &amp; Vulnerability Disclosure</h3>
+        <ul>
+          <li>Disclosed 4 validated security vulnerabilities across public/private targets on platforms like OpenBugBounty and Intigrity, drafting comprehensive POC reports with CVSS risk scoring and remediation guidance.</li>
+          <li>Investigated and verified CVE-2023-48795 vulnerabilities on corporate SFTP infrastructure using custom Nuclei scans.</li>
+        </ul>
+      </div>
+      <br>
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li><strong>CISCO Ethical Hacker Certificate</strong> – Completed July 2026.</li>
+          <li><strong>CEH v13</strong> – Preparing for it...</li>
+          <li><strong>TryHackMe</strong> – Solved numerous CTF machines.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>## Projects</h2>
       <div class="grid">
         <div class="card">
-          <h3>Bypassing WAF to achieve Stored XSS</h3>
-          <p>A detailed technical writeup on how I bypassed a commercial WAF using double URL encoding on a private bug bounty program.</p>
+          <h3>Automated Reconnaissance Script</h3>
+          <p>Python, Bash | Built a custom recon script leveraging Subfinder, Gobuster, HTTPX, Naabu, and Nmap to streamline asset discovery and port scanning.</p>
           <br>
-          <a href="#">Read Writeup -&gt;</a>
+          <a href="https://github.com/mrnothing8262/MrNothing_Recon" target="_blank" rel="noopener noreferrer">View on GitHub -&gt;</a>
         </div>
         <div class="card">
-          <h3>Custom Subdomain Enumeration Script</h3>
-          <p>A bash script wrapping SubFinder, Gobuster, Nmap, Naabu, Gowitness, and httpx to automate the reconnaissance phase of web pentesting.</p>
+          <h3>Dynamic WAF Fuzzer</h3>
+          <p>Python, Machine Learning | Designed a fuzzer using Logistic Regression to analyze WAF responses, learn triggering features, and intelligently mutate payloads to achieve unencoded reflection.</p>
           <br>
-          <a href="https://github.com/mrnothing8262" target="_blank" rel="noopener noreferrer">View Source on GitHub -&gt;</a>
+          <a href="https://github.com/mrnothing8262/Nothing_WAF" target="_blank" rel="noopener noreferrer">View on GitHub -&gt;</a>
         </div>
       </div>
     </section>
 
+    <!-- Education -->
+    <section id="education">
+      <h2>## Education</h2>
+      <p><strong>Bachelor of Computer Applications (BCA)</strong> | JSIMR College, Hadapsar (2026)</p>
+      <ul>
+        <li>First Year CGPA: 8.91/10 | Currently Pursuing Second Year.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
       <h2>## Contact</h2>
       <p>I am currently open to Junior Pentester or Application Security roles.</p>
